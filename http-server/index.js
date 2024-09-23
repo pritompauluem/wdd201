@@ -25,7 +25,7 @@ const server = http.createServer((req, res) => {
   if (req.url === "/registration") {
     // Serve registration.html
     serveFile(path.join(__dirname, "registration.html"), "text/html", res);
-  } else if (req.url === "/projects") {
+  } else if (req.url === "/project") {
     // Serve project.html
     serveFile(path.join(__dirname, "project.html"), "text/html", res);
   } else if (req.url === "/" || req.url === "/home") {
